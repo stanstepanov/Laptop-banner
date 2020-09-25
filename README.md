@@ -8,14 +8,20 @@ This little project was designed as a handling practices of NODE.JS starting fro
 
 ! I found a good idea to give to variables the same names as the package names.
 
+***
+
 In the "FS" module, I used the "Synchronous call" and in order to display the content of the file as a string, I used the (UTF-8) code.
 
 const json = fs.readFileSync(${__dirname}/data/data.json, 'utf-8');
+
+***
 
 Creating the server, I passed a CallBack function that works each time when someone accesses the WEB server, therefore I have added the "request" and the "response" objects.
 
 const server = http.createServer((req, res) => {...}
 \\ please see the full code in my repository.
+
+***
 
 In order to respond a different ways to different URLs, I have also added the third module called "ROUTING" into this project
 
